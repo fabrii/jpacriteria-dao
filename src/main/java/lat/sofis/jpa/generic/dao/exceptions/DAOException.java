@@ -1,4 +1,4 @@
-package org.generic.dao.exceptions;
+package lat.sofis.jpa.generic.dao.exceptions;
 
 /**
  * Exception used to represent a data error

@@ -1,4 +1,4 @@
-package org.generic.dao.utils;
+package lat.sofis.jpa.generic.dao.utils;
 
 import java.util.logging.Logger;
 import javax.persistence.criteria.CriteriaBuilder;

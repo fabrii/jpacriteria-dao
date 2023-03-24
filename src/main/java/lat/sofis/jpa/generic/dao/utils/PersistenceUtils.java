@@ -1,4 +1,4 @@
-package org.generic.dao.utils;
+package lat.sofis.jpa.generic.dao.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

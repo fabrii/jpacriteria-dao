@@ -1,4 +1,4 @@
-package org.generic.dao.security;
+package lat.sofis.jpa.generic.dao.security;
 
 import java.util.List;
 import javax.persistence.criteria.CriteriaBuilder;

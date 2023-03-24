@@ -1,4 +1,4 @@
-package org.generic.dao.exceptions;
+package lat.sofis.jpa.generic.dao.exceptions;
 
 /**
  * Exception used to represent access to a domain not owned by the consumer

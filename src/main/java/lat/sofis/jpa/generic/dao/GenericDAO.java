@@ -1,4 +1,4 @@
-package org.generic.dao;
+package lat.sofis.jpa.generic.dao;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
@@ -23,14 +23,15 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.persistence.criteria.Selection;
 import javax.transaction.Transactional;
+import lat.sofis.jpa.generic.dao.exceptions.DAOException;
+import lat.sofis.jpa.generic.dao.exceptions.DAOSecurityException;
+import lat.sofis.jpa.generic.dao.security.DataSecurity;
+import lat.sofis.jpa.generic.dao.security.DomainSecurity;
+import lat.sofis.jpa.generic.dao.utils.CriteriaApiUtils;
+import lat.sofis.jpa.generic.dao.utils.PersistenceUtils;
+import lat.sofis.jpa.generic.dao.utils.ReflectionUtils;
 import org.hibernate.Session;
-import org.generic.dao.exceptions.DAOException;
-import org.generic.dao.exceptions.DAOSecurityException;
-import org.generic.dao.security.DataSecurity;
-import org.generic.dao.security.DomainSecurity;
-import org.generic.dao.utils.CriteriaApiUtils;
-import org.generic.dao.utils.PersistenceUtils;
-import org.generic.dao.utils.ReflectionUtils;
+
 
 /**
  * GenericDAO provides data access functionalities for generic entities
