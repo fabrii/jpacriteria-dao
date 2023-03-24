@@ -322,4 +322,4 @@ public class GenericFilter implements Serializable {
 
 ## About
 
-Created within a project led by [MEF](https://www.mef.gub.uy/) and [Sofis Solutions](https://sofis-solutions.com/).
+Created within a project led by [MEF](https://www.mef.gub.uy/) and [Sofis Solutions](https://sofis.lat/).
