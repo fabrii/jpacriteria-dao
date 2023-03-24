@@ -58,8 +58,8 @@
             <version>2.13.0</version>
         </dependency>
         <dependency>
-            <groupId>org.generic</groupId>
-            <artifactId>genericdao</artifactId>
+            <groupId>lat.sofis</groupId>
+            <artifactId>jpa-generic-dao</artifactId>
             <version>0.1.0</version>
         </dependency>
         

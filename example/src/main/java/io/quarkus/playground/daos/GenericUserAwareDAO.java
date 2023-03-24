@@ -7,9 +7,9 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import org.generic.dao.GenericDAO;
-import org.generic.dao.exceptions.DAOException;
-import org.generic.dao.security.DomainSecurity;
+import lat.sofis.jpa.generic.dao.GenericDAO;
+import lat.sofis.jpa.generic.dao.exceptions.DAOException;
+import lat.sofis.jpa.generic.dao.security.DomainSecurity;
 
 public class GenericUserAwareDAO<T> extends GenericDAO<T> implements Serializable {
 

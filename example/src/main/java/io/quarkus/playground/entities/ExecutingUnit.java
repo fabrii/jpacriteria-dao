@@ -16,8 +16,8 @@ import javax.persistence.Table;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import org.generic.dao.security.DataSecurity;
-import org.generic.dao.security.DomainSecurity;
+import lat.sofis.jpa.generic.dao.security.DataSecurity;
+import lat.sofis.jpa.generic.dao.security.DomainSecurity;
 
 @Entity
 @Table(name = "executing_units")
