@@ -226,9 +226,9 @@ public class ExampleDAO extends GenericUserAwareDAO<ExampleEntity> implements Se
         super(em, ExampleEntity.class);
     }
 
-	/**
-	* Overrides generatePredicates method with custom ExampleEntity predicates
-	*/
+    /**
+    * Overrides generatePredicates method with custom ExampleEntity predicates
+    */
     @Override
     public List<Predicate> generatePredicates(GenericFilter genericFilter, Root<ExampleEntity> root) {
 
@@ -240,7 +240,7 @@ public class ExampleDAO extends GenericUserAwareDAO<ExampleEntity> implements Se
             predicates.add(cb.equal(root.get("id"), filter.getId()));
         }
        
-		...
+	//add more filters
        
         return predicates;
     }
@@ -263,10 +263,11 @@ public class GenericUserAwareDAO<T> extends GenericDAO<T> implements Serializabl
         super(em, clase, CDI.current().select(AuthenticatedUser.class, new NamedAnnotation(ConstantesCommon.AUTH_USER_BEAN)).get().getUserId());
     }
 
-	/**
-	* Generic method that should be overrided by the DAO extending GenericUserAwareDAO
-	public List<Predicate> generatePredicates(FiltroGenerico filtro, Root<T> root) throws Exception {
-		...
+    /**
+    * Generic method that should be overrided by the DAO extending GenericUserAwareDAO
+    */
+    public List<Predicate> generatePredicates(FiltroGenerico filtro, Root<T> root) throws Exception {
+	...
     }
 
     public List<T> searchByFilter(GenericFilter filtro, DomainSecurity domsec) throws Exception, DAOException {
